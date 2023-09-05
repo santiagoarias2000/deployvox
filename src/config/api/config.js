@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.JWTSECRETREFRESH = exports.database = exports.password = exports.username = exports.port = exports.host = exports.JWTSECRET = void 0;
+require("dotenv/config");
+exports.JWTSECRET = String(process.env.JWTSECRET);
+exports.host = process.env.HOST_DATA_BASE;
+exports.port = Number(process.env.PORT_DATA_BASE);
+exports.username = process.env.USER_DATA_BASE;
+exports.password = String(process.env.PASSWORD_DATA_BASE);
+exports.database = process.env.NAME_DATA_BASE;
+exports.JWTSECRETREFRESH = String(process.env.JWTSECRETREFRESH);
